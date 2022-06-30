@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Constructor As a Class</title>
+</head>
+<body>
+<script type="text/javascript">
+// We Define Class in javascripts using Custom CLasses
+	 var Mobile= function(model_no,sprice){
+	 	this.model=model_no; //this point our current object instance
+	 	this.color='White';     
+	 	this.price=3000;
+	 	this.sp=sprice;
+	 	this.sellingprice=function(){
+	 		return(this.sp+this.price);
+	 	};
+	 	this.data = function(){
+	 	document.write(" Model No: "+this.model+" Price: "+this.sellingprice());
+	 	}
+	 };
+	 var samsung= new Mobile('Galaxy',2000);
+	 var nokia= new Mobile('3310',1000);
+	 nokia.data();
+	 document.write("<br>");
+	 samsung.data();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	// Adding Object Properties and Methods
+	var fees={Rahul:200,Rohan:300};
+	document.write(fees.Rahul+" "+fees.Rohan);
+	fees.Sumit=400;
+	document.write("<br>");
+	document.write(fees.Sumit);
+	console.log(fees);
+	// Adding Method in object
+	document.write("<br>");
+	fees.total=function(){return (100+200)};
+	document.write(fees.total())
+	// Delete Object Properties
+	delete fees.Rahul;//delete at end because i write this in end if i write atstart then first value is undefined
+	document.write(fees.Rahul);
+</script>
+</body>
+</html>

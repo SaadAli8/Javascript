@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	// To Check if property is Avaible or Don't Exist
+	function Mobile(model_no){
+		this.model= model_no;
+		this.memory= 4;
+	}
+	var samsung= new Mobile('Galaxy');
+	var nokia = new Mobile('3310');
+
+	 if(typeof nokia.memory !== 'undefined'){
+	 	document.write("Avaible");
+	 }
+	 else{
+	 	document.write("Doesn't Exist");
+	 }
+		 document.write("<br>");
+	 // Other Easy Method to Check Property 
+	 function Mobile(model_no){
+		this.model= model_no;
+		this.memory= 4;
+		this.color= 'White';
+	}
+	var samsung= new Mobile('Galaxy');
+	var nokia = new Mobile('3310');
+
+	if( 'memory' in nokia){
+		document.write("Avaible");
+	}
+	else{
+		document.write("Doesn't Exist");
+	}
+	//Other Method
+	document.write("<br>");
+	if(nokia.hasOwnProperty('color')){
+		document.write("Avaible");
+	}
+	else{
+		document.write("Doesn't Exist");
+	}
+
+	
+
+
+	
+</script>
+</body>
+</html>

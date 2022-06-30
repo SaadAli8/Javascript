@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nested</title>
+</head>
+<body>
+<script type="text/javascript">
+	var i=0;
+	while(i<3){
+		document.write("Outer Loop is running");
+		document.write("<br>"+i);
+		i++;
+		document.write("<br>");
+		var j=0;
+		while(j<5){
+			document.write("Inner Loop is running");
+			document.write("<br>"+j);
+			j++;
+			document.write("<br>");
+		}
+	}
+	document.write("Rest of the Code");
+</script>
+</body>
+</html>

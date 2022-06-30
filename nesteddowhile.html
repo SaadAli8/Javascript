@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nested Do While</title>
+</head>
+<body>
+<script type="text/javascript">
+	var i=0;
+	do{
+		document.write("Outer Loop is running");
+		document.write("<br>"+i);
+		i++;
+		document.write("<br>");
+		var j=0;
+		do{
+			document.write("Inner Loop is running");
+			document.write("<br>"+j);
+			j++;
+			document.write("<br>");
+		}while(j<5);
+	}while(i<4);
+	document.write("Rest of the Code");
+</script>
+</body>
+</html>

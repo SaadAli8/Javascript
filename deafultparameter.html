@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DefaultParameter</title>
+</head>
+<body>
+ <script type="text/javascript">
+ 	function display(a,b,c="Ali"){
+ 		document.write(a+" ");
+ 		document.write(b+" ");						//Main Priority is argument 
+ 		document.write(c+" ");	//if we put arugment value then arugment is diplay defaultparameter not display
+ 	}
+ 	display("Hii","Saad");
+
+//if we put arugment value then arugment is diplay defaultparameter not display
+// Default Parameter always defined in End If we Define at start then we get Undefined(a,b=10,c).This get Undefine
+		document.write("<br>")
+ 	function display1(a,b,c="Ali"){
+ 		document.write(a+" ");
+ 		document.write(b+" ");					
+ 		document.write(c+" ");	
+ 	}
+ 	display1("Hii","Saad","ALI");
+ 	document.write("<br>")
+ 	//Default Parameter with Array
+
+ 	function display2(num,a=["Saad","Ali"]){
+ 		document.write("Number "+num);
+ 		document.write("<br>A "+a[0]);
+ 		document.write("<br>A "+a[1]);
+ 	}
+ 	display2(10,[20,30]);
+ </script>
+</body>
+</html> 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>local & global varible</title>
+</head>
+<body>
+<script type="text/javascript">
+				// Global Variable
+			//Accessible from anywhere
+	var i="I am a Global Variable";
+	function display(){
+		document.write(i);
+	}
+	display();
+	document.write("<br>");
+	document.write(i);
+
+				// Local Variable
+			// Not accessible from anywher
+	function display1(){
+		var j="I am a Local Variable";
+		document.write("<br>");
+		document.write(j);
+	}
+	display1();
+		//document.write(j);			//Local variable Don't access on OUTSIDE the Function Check Console
+
+		// Global Variable Inside the function
+		function display2(){
+			k="I am a Global Variable Inside the Function";	//If we remove var then it become global variable
+			document.write("<br>");
+			document.write(k);
+		}
+		display2();
+		document.write("<br>");
+		document.write(k);
+
+		// Local Variable in Nested Function
+		function display3(){
+			var l="I am a Local Variable of Outer the Function";
+			document.write("<br>");
+			document.write(l);
+			function display4(){
+				var m="I am a Local Variable of Inner Function";
+				document.write("<br>");
+				document.write(m);			//The Outer Variable is access in Inner Function and its Work
+				document.write("<br>");			//But Inner variable is access in Outer but it not work
+				document.write(l);
+			}
+			display4();
+		}
+		display3();
+</script>
+</body>
+</html>

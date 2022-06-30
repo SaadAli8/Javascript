@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>for in loop</title>
+</head>
+<body>
+<script type="text/javascript">
+	function Mobile(model_no){
+		this.model = model_no;
+		this.color= 'white';
+		this.ram = '4Gb';
+		this.price = function(){
+			document.write(this.model + "Price Rs.3000 <br>")
+		};
+	}
+	var samsung= new Mobile('Galaxy');
+	var nokia= new Mobile('3310');
+	// For in loop to check properites one by one
+	for(var specs in nokia){
+		// this code is if property is not function then it disply other wise not.
+		if(typeof nokia[specs] !== 'function'){
+		document.write(specs+" "+nokia[specs]+"<br>");
+	}
+}
+	document.write("<br>");
+	// To check How many keys in Function
+	document.write(Object.keys(nokia));
+</script>
+</body>
+</html>

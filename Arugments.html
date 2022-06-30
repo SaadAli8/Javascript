@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arguments</title>
+</head>
+<body>
+<script type="text/javascript">
+	function disp(name,name1){
+		document.write(name+name1);
+	}
+	disp("Saad","Ali");
+	//Other Method
+	function display(n1,n2,n3) {
+		document.write("<br>");
+		arguments[0]="Hi";				//If we assign arugment and in calling function arugment not work
+		document.write(arguments[0]);		//then assign arugment is working like Hi work, hello not work
+		document.write(arguments[1]+" ");				//Other method to Display Arugment
+		document.write(arguments[2]);					
+	}
+	display("Hello","Saad","Ali");
+
+	//To Find Number of Argument
+	function number(){
+		document.write("<br>");
+		document.write(arguments.length);		//Tell number of Argument
+	}
+	number("Hello","Hi","Saad","Ali");
+	document.write("<br>");
+
+		//Other Method
+
+		function disp2(){
+			for (var i=0; i < arguments.length; i++){
+				document.write(arguments[i]+" ");
+			}
+			
+		}
+		disp2("Hello","Saad","Ali");
+		document.write("<br>");
+
+		//Other Method to Show Information Inside the Function
+
+		function dis4(name7,name4,name5){
+			document.write(arguments.callee);	//argument.callee is property tell the Information of Function
+		}
+		dis4("Hello",420,"Dude");
+
+		//Too many Functions Arguments
+
+		function add2(a,b){
+			document.write("<br>");
+			document.write("A "+a+" B "+b+" C "+arguments[2]+" D "+arguments[3]);
+		}
+		add2(10,20,30,40);
+</script>
+</body>
+</html>

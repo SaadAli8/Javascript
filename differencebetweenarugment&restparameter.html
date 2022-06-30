@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Difference between Argument Object and Rest Parameter</title>
+</head>
+<body>
+<script type="text/javascript">
+	//Rest Parameter
+	function display(a,...argus){
+		console.log("A "+a);							//Output in Console in developer option
+		console.log(argus);			// Difference is in Console mode Rest parameter skip A vlaue but argument dont
+	}
+	display(10,20,30,40,50);
+	//Argument Object
+	function display1(a){
+		console.log("A "+a);
+		console.log(arguments);
+	}
+	display1(10,20,30,40,50);
+</script>
+</body>
+</html>

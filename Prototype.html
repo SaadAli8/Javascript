@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ProtoType</title>
+</head>
+<body>
+<script type="text/javascript">
+	var Mobile= function(model_no){
+		//Instance Member this property is
+		this.model= model_no;
+		this.price= 3000;
+	};
+	var samsung= new Mobile('Galaxy');
+	var nokia= new Mobile('3310');
+	//If We want to Add Key in Function then
+	samsung.color='White';
+	document.write(samsung.color);
+	console.log(samsung);
+	console.log(nokia);
+	//This Key is Only Use for Samsung Function
+	// If we want to use key in All function then we use Prototype
+	// classname.prototype.key='value';
+	//ProtoType Member this property is
+	Mobile.prototype.camera= '12MegaPixel';
+	//This key is only shown in console in proto
+	//PrptoType is a SuperClass or Parent Class
+	document.write(samsung.camera);
+	document.write(nokia.camera);
+	// t
+</script>
+</body>
+</html>

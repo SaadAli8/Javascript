@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anonymous Function</title>
+</head>
+<body>
+<script type="text/javascript">
+	// Anonymous Function
+	var myfun= function(){		//No Name is used in Anonymous Function and SemiColon at the end of parentheses
+		i="I am a Anonymous Function";
+		document.write(i);
+	};
+	myfun();
+	document.write("<br>");
+
+						//Passing Anonymous Function as Argument
+
+	function disp(myfun){
+		return myfun();
+	}
+	document.write(disp( function(){
+		return "Saad Ali";
+	}));
+
+						//Return Anonymous Function
+
+	document.write("<br>");
+	function disp1(a){
+		return function(b){
+			return a+b;
+		};
+	}
+	var fn= (disp1(10));
+	document.write(fn(20));
+
+</script>
+</body>
+</html>

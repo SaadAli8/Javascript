@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Constructor</title>
+</head>
+<body>
+<script type="text/javascript">
+//Constructor use for same specification of different Products
+function Mobile(){
+	this.model='3310';
+	this.price=function(){document.write(this.model+"  Price is Rs.30000")};
+}
+	var Nokia= new Mobile();
+	Nokia.price();
+	document.write("<br>");
+	document.write(Nokia.model);
+	document.write("<br>");
+	//Constructor with Parameter
+	function Mobile1(model_no){
+		this.model= model_no;
+		this.price= function(){document.write(this.model+"  Price is 250000")};
+	}	//new is used for Object Constructor
+		//Different Product Used for Same Specification
+	var samsung= new Mobile1('Galaxy');
+	samsung.price();
+	document.write("<br>");
+	var Oppo= new Mobile1('A3s');
+	Oppo.price();
+	document.write("<br>");
+	var Real_me= new Mobile1('5s');
+	Real_me.price();
+	document.write("<br>");
+
+	// IF Price is not Same Then
+	function Mobile2(model_no1,price2){
+		this.model= model_no1;
+		this.price= price2;
+	}	//new is used for Object COnstructor
+		//Different Product Used for Same Specification
+	var Xiomi= new Mobile2('Redmi',27000);
+	document.write(Xiomi.model+"   Price is  "+Xiomi.price);
+	document.write("<br>");
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Diffeerence between Var &Let & Const</title>
+</head>
+<body>
+<script type="text/javascript">
+// Var Keyword
+var a= 10;							// Var Re Assigned the Value
+if (true) {
+	a=20;
+	document.write(a);
+}
+document.write("<br>");
+document.write(a);
+document.write("<br>");
+//Let Keyword
+let b=10;
+if (true) {
+	let b=30;							// Value not Re assigned 
+	document.write(b);				//Let keyword is a good practice
+	document.write("<br>");
+}
+document.write(b);
+document.write("<br>");
+//Constant Keyword
+const c=30;					// used For Fixed Value like value of pie is fixed 3.14
+document.write(c);
+</script>
+</body>
+</html>

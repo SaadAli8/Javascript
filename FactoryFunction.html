@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Factory Function</title>
+</head>
+<body>
+<script type="text/javascript">
+	//Factory Function  Important
+	function mobile(){
+		return{
+			model:'Galaxy',
+			Price: function(){return"Price is Rs 30,000";}
+		};
+	}				// Same Code Use for Different Functions
+	var samsung= mobile();
+	document.write(samsung.model+" "+samsung.Price());
+	document.write("<br>");
+	var lg= mobile();
+	document.write(lg.model+ " "+lg.Price());
+	document.write("<br>");
+
+	//Factory Function with Parameters
+
+	function mobile1(model_no,price1,ram1){
+		return{
+			model: model_no,		//In case we have Changed Value
+			price: price1,
+			ram: ram1		
+		};
+	}
+	var Oppo=mobile1('Oppo A3s','21000','2GB');
+	document.write(Oppo.model+" "+Oppo.price+" Ram is "+Oppo.ram);
+	document.write("<br>");
+	var Real_me = mobile1('Real me 5s','30000','4GB');
+	document.write(Real_me.model+" "+Real_me.price+" Ram is "+Real_me.ram);
+
+</script>
+</body>
+</html>

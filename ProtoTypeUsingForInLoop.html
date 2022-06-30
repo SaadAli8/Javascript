@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+ var Mobile= function(model_no){
+ 	//Instance Member
+ 	this.model=model_no;
+ 	this.price= 3000;
+ };
+ var samsung= new Mobile('galaxy');
+ var nokia= new Mobile('3310');
+ //Prototype Member
+ Mobile.prototype.camera='12 MegaPixel';
+ //Object.keys tell us how many properites in function
+ //If we using Object.keys Prototype properity will not Show
+ //But if we want to see Prototype member also then we use ForInLoop
+ document.write(Object.keys(samsung));
+ document.write("<br>");
+ for (var key in samsung){
+ 	document.write(key);
+ }
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ObjectConstrator</title>
+</head>
+<body>
+<script type="text/javascript">
+	// Decartion Object Constructor
+	var fees=new Object();
+	fees.Ali=200;
+	fees.Farhan=300;
+	fees.Raza=400;
+	document.write(fees.Raza);
+	document.write("<br>");
+	fees.total=function(){return (200+300+400)};
+	document.write(fees.total());
+
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects</title>
+</head>
+<body>
+<script type="text/javascript">
+	//Declartion of Objects
+	var fees={};
+		fees['Osama']=200;
+		fees['Bilal']=300;					//=> Properties of Objects
+		fees['Ali']=400;
+	document.write(fees['Osama']);
+	document.write("<br>");
+	document.write(fees.Osama);		// Other easy method to display in screen
+
+	//Other method to declare the object\
+
+	var fee={};
+	fee.Abid=200;
+	fee.umar=300;
+	fee.raza=400;
+	document.write("<br>");
+	document.write(fee.raza);
+	document.write("<br>");
+
+	//Method to call and access the object
+
+	var cal={};
+	cal['amount']=200;
+	cal['total']= function(){ return(200+300);};
+	document.write(cal.total());
+	document.write("<br>");
+
+	//Declartion & Initialization of Object
+
+
+	var fes={Rohan:200,farhan:300,junaid:400};		//in one line declare and initialize the object
+	document.write(fes.farhan);
+	document.write("<br>");
+
+	var fn={Umair:200,total:function(){return(200+200)}};
+	document.write(fn.total());
+
+
+</script>
+</body>
+</html>

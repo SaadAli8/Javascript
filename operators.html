@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Operators</title>
+</head>
+<body>
+<script type="text/javascript">
+	var a=4;
+	var b=2;
+
+	//Arthimetic Operators
+
+	document.write(a+b);
+	document.write(a-b);
+	document.write(a*b);
+	document.write(a/b);
+	document.write(a%b);
+	document.write(a**b);//The exponentiation operator (**) raises the first operand to the power of the second operand.
+
+	// Logical Operators
+
+	var c= 20>10;	
+	var d= 10<12;
+	var e= c && d;		// And Operator
+	document.write(e);
+	var f= c || d;		// Or Operator
+	document.write(f);
+
+	// Comparison Operators
+
+	var g= 5>=2;		// Less than and Equal too
+	document.write(g);
+	var h= 4<=2;		// Greater than and Equal too
+	document.write(h);
+	var i= 2==2;		// Equal too
+	document.write(i);
+	var j= 2===2;		// Equal value and same type
+	document.write(j); 
+	var k= 5!=2;		// Not Equal too
+	document.write(k);
+	var l= 2!== "2";	// Not Equal Value or Not Same type
+	document.write(l);
+	var m= 5!==5;
+	document.write(m);
+
+	//Bitwise Operators
+	// Match two Vlaues with the help of its Table and Show Output in Decimal
+
+	var a1=5;			//00000101
+	var b1=6;			//00000110
+	var c1= a1 & b1;	//00000100
+	document.write(c1);
+	var d1= a1 | b1;	//00000111   then convert to Decimal Number and show output
+	document.write(d1);
+	var e1= a1 ^ b1;		//Xor Operator
+	document.write(e1);	//00000011
+	var f1= ~a1;		//11111010
+	document.write(f1);
+	// Shift operator
+	var g1= 5 >> 2;	 	//01000001 Shift Right value to Left
+	document.write(g1);
+	var h1= 5 << 1;		//00001010 Shift Left Value to Right
+	document.write(h1);
+
+	//Assignment Operaators
+
+	var a2= 10;
+		a2 += 15;		//a2= a2 + 10
+	document.write(a2);
+	var b2= 15;
+		b2 -= 25;		//b2= b2 - 15
+	document.write(b2);
+	var c3= 30;			//c3= c3 * 30
+		c3 *= 5;
+	document.write(c3);
+	var d3= 20;			//d3= d3 / 20
+		d3 /= 2;
+	document.write(d3);
+	var a4= 10;
+		a4	%= 2;		//a4= a4 % 10
+	document.write(a4);
+	var b4= 4;
+		b4 &= 2;		//b4= b4 & 4
+	document.write(b4);
+	var c4= 4;
+		c4 |= 2;		//c4= c4 | 4
+	document.write(c4);
+		var d4= 4;
+		d4 ^= 2;		//d4= d4 ^ 4
+	document.write(d4);
+		var e4= 4;
+		e4 >>= 2;		//e4= e4 >> 4
+	document.write(e4);
+	var f4= 4;
+		f4 <<= 2;		//f4= f4 << 4
+	document.write(f4);
+	</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrow Function</title>
+</head>
+<body>
+<script type="text/javascript">
+	//Arrow Function
+	var myfun= () =>{
+		document.write("I am a Arrow Function");
+	}
+	myfun();
+	document.write("<br>");
+	//Arrow Function with Default Parameters
+	var myfun1= (a,b=20) =>{
+		document.write("A"+a+" B"+b);
+	}
+	myfun1(20);
+	document.write("<br>");
+	//Arrow Function with Rest Parameters
+	var myfun1= (a,...args) =>{
+		document.write("A "+a+args);
+	}
+	myfun1(20,30,40,50,60);
+	document.write("<br>");
+	//Other small way to Call Arrow function
+	var myfun3= a=> a;				//return c; is not nescessary or one variable and also parentheses
+	document.write(myfun3(5));
+</script>
+</body>
+</html>

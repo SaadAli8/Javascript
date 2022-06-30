@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ProtoTypeObject</title>
+</head>
+<body>
+<script type="text/javascript">
+				//Important watch geekyshows
+//Object.getPrototypeOf is a Method to check objects associated
+//Every Object is associated with another Object in Javascript
+//To check what object.prototype defines we check in console log
+// It will return Object.Prototype
+console.log(Object.prototype);
+var b={};
+// b is associated to Object.prototype
+console.log(Object.getPrototypeOf(b));
+var b1 = new Object();
+// b1 is associated to Object.prototype
+console.log(Object.getPrototypeOf(b1));
+// And Object.prototype is associated to NULL see in console Log
+console.log(Object.getPrototypeOf(Object.prototype));
+var b2= new Array();
+//b2 is associated to Array.prototype check console.log
+console.log(Object.getPrototypeOf(b2));
+//Array.prototype is associated to Object.prototpye
+console.log(Object.getPrototypeOf(Array.prototype));
+//Object.prototype is associated to Null
+console.log(Object.getPrototypeOf(Object.prototype));
+
+</body>
+</html>

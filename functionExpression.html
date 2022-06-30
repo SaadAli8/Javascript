@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Function Expression</title>
+</head>
+<body>
+<script type="text/javascript">
+	//Function Declaration
+	show();			// In Function Declartion we can call Function anywhere Upside of declared function and Down
+	document.write("<br>");
+	function show(){
+		var i="I am a Declared Function";	
+		document.write(i);
+	}
+	show();
+	//Funtion Expression
+	//myfun();			//But in Function Expression we first we define then we call otherwise it not work
+	var myfun= function show(){
+		j="I am a Function Expression";
+		document.write("<br>");
+		document.write(j);
+	};
+	myfun();
+</script>
+</body>
+</html>
